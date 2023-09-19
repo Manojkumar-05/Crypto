@@ -9,7 +9,7 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
-import { Triangle, Vortex } from "react-loader-spinner";
+import { ColorRing, Triangle, Vortex } from "react-loader-spinner";
 import convertToIndianFormat from "../compoenets/seperateWithComma";
 
 const Show = () => {
@@ -28,7 +28,16 @@ const Show = () => {
           That didn<span className="text-red-600">'</span>t work li
           <span className="text-red-600">'</span>l bro
         </div> */}
-        <Vortex
+        <ColorRing
+          visible={true}
+          height="100"
+          width="100"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"]}
+        />
+        {/* <Vortex
           visible={true}
           height="120"
           width="120"
@@ -36,14 +45,14 @@ const Show = () => {
           wrapperStyle={{}}
           wrapperClass="vortex-wrapper"
           colors={[
-            "#0000AA",
+            "#FF0000",
+            "#00FF00",
             "#0000FF",
-            "#3366FF",
-            "#0000AA",
-            "#0000FF",
-            "#3366FF",
+            "#FFFF00",
+            "#FF00FF",
+            "#00FFFF",
           ]}
-        />
+        /> */}
         {/* <Triangle
           height="180"
           width="180"
